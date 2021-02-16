@@ -15,12 +15,14 @@ from secrets_file import *
 # from dotenv import load_dotenv
 # import os
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # load_dotenv(verbose=True)
 ALLOWED_HOSTS = ['mindfull-em.herokuapp.com', '127.0.0.1']
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 # SECRET_KEY = os.getenv("SECRET_KEY")
 # DEBUG = os.getenv("DEBUG")
