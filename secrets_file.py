@@ -15,7 +15,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mindfull',
         'USER': 'postgres',
-        'HOST': os.environ['HOST'],
+        'HOST': os.environ['DATABASE_URLg'],
         'PORT': os.environ['PORT']
     }
 }
