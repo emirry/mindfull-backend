@@ -15,8 +15,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mindfull',
         'USER': 'postgres',
-        'HOST': os.environENV['HOST'],
-        'PORT': os.environENV['PORT']
+        'HOST': os.environ['HOST'],
+        'PORT': os.environ['PORT']
     }
 }
 
@@ -25,15 +25,15 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': os.environENV['PASS1'],
+        'NAME': os.environ['PASS1'],
     },
     {
-        'NAME': os.environENV['PASS2'],
+        'NAME': os.environ['PASS2'],
     },
     {
-        'NAME': os.environENV['PASS3'],
+        'NAME': os.environ['PASS3'],
     },
     {
-        'NAME': os.environENV['PASS4'],
+        'NAME': os.environ['PASS4'],
     },
 ]
