@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ENV['KEY']
+SECRET_KEY = os.environ['KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -15,8 +15,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'mindfull',
         'USER': 'postgres',
-        'HOST': ENV['HOST'],
-        'PORT': ENV['PORT']
+        'HOST': os.environENV['HOST'],
+        'PORT': os.environENV['PORT']
     }
 }
 
@@ -25,15 +25,15 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': ENV['PASS1'],
+        'NAME': os.environENV['PASS1'],
     },
     {
-        'NAME': ENV['PASS2'],
+        'NAME': os.environENV['PASS2'],
     },
     {
-        'NAME': ENV['PASS3'],
+        'NAME': os.environENV['PASS3'],
     },
     {
-        'NAME': ENV['PASS4'],
+        'NAME': os.environENV['PASS4'],
     },
 ]
