@@ -15,6 +15,7 @@ from secrets_file import *
 # from dotenv import load_dotenv
 # import os
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # load_dotenv(verbose=True)
 ALLOWED_HOSTS = ['mindfull-em.herokuapp.com', '127.0.0.1']
 
@@ -76,6 +77,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'app.urls'
